@@ -1,6 +1,6 @@
-##Ubuntu Server Standard Configuration
+## Ubuntu Server Standard Configuration
 
-###Security
+### Security
 
 **Follow** [these](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04) directions to bootstrap the server. (The step for setting up UFW _may_ need to be omitted for certain projects.)  Reference [this](https://www.digitalocean.com/community/tutorials/7-security-measures-to-protect-your-servers) page for some security hardening tips.  
 
