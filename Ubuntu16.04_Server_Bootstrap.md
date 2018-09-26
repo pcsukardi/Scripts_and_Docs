@@ -4,7 +4,7 @@
 
 **Follow** [these](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04) directions to bootstrap the server. (The step for setting up UFW _may_ need to be omitted for certain projects.)  Reference [this](https://www.digitalocean.com/community/tutorials/7-security-measures-to-protect-your-servers) page for some security hardening tips.  
 
-**First run**, this command to get the server up to date, `sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -f $$ sudo apt autoremove`  
+**First run**, this command to get the server up to date, `sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -f $$ sudo apt autoremove -y`  
 
 **Download, install and run** an audit using [this](https://github.com/CISOfy/lynis) utility. This is Lynis an auditing tool and is a great way to lock down any holes in server security before any extra programs are installed.  
 
