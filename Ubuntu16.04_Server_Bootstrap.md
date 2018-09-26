@@ -120,7 +120,7 @@ Change the content of this file to:
 ​`nospoof on`  
 
 
-###Monitoring  
+### Monitoring  
 
 **Install Fail2Ban**, This is a utility that monitors logs and gives a layer of protection against brute force attacks on the server.  
 
