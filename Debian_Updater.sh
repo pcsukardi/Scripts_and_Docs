@@ -12,4 +12,7 @@ sudo apt-get install -f
 # This will clean up any broken dependencies or deprecated packages.
 sudo apt autoremove -y
 
+#This upgrades the new distributed packages after the update and system upgrade.
+sudo apt-get dist-upgrade -y
+
 exit 0
