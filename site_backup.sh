@@ -1,7 +1,13 @@
 #!/bin/bash
 
-mysqldump -u {userhere} -p{passwordhere} {databasehere} > /var/www/html/wordpress/"db_backup.sql.$(date)"
+User={user_name}
+Password={password_of_user}
+Database={database_name}
+Path={directory_path_to_backup}
+Serveraddress={destination_ip_address}
 
-rsync -azh /var/www/html/wordpress {user@serveraddresshere}:/share/homes/admin/
+mysqldump -u $User -p$Password $Database > $Path/"db_backup.sql.$(date)"
+
+rsync -azh $Path user@$Serveraddress:/share/homes/admin/
 
 exit 0
