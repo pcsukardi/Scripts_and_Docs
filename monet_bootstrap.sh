@@ -4,17 +4,17 @@
 sudo add-apt-repository ppa:openjdk-r/ppa -y
 
 # This updates the repository list.
-sudo apt-get update
+sudo apt-get update 
+
+# Install openssh server.
+sudo apt-get install openssh-server -y 
 
 # Add docker GPG key.
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 # Add docker repo.
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" -y
+   
 # Update the repos.
 sudo apt-get update
 
