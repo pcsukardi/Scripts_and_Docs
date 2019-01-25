@@ -19,10 +19,10 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 
 # This installs openjdk 11.
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-11-jdk -y
 
 # This installs docker.
-sudo apt-get install docker-ce
+sudo apt-get install docker-ce -y
 
 # This brings the system up to date with an upgrade.
 sudo apt-get upgrade -y
